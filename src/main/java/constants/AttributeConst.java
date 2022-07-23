@@ -19,6 +19,9 @@ public enum AttributeConst {
     //ログイン中の従業員
     LOGIN_EMP("login_employee"),
 
+    //フォローされる従業員
+    FOLLOW_EMP("follow_imployee"),
+
     //ログイン画面
     LOGIN_ERR("loginError"),
 

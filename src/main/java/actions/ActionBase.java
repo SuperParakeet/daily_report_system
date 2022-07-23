@@ -69,7 +69,9 @@ protected void invoke()
 
         //発生した例外をコンソールに表示
         e.printStackTrace();
+
         //commandの値が不正で実行できない場合エラー画面を呼び出し
+        System.out.println("ActionBaseクラスのinvoke()実行中にでエラー発生"); // デバッグ用
         forward(ForwardConst.FW_ERR_UNKNOWN);
     }
 
@@ -127,6 +129,7 @@ protected boolean checkToken() throws ServletException, IOException {
     if (_token == null || !(_token.equals(getTokenId()))) {
 
         //tokenが設定されていない、またはセッションIDと一致しない場合はエラー画面を表示
+        System.out.println("TokenIdが不一致のためでエラー発生"); // デバッグ用
         forward(ForwardConst.FW_ERR_UNKNOWN);
 
         return false;
