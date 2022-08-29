@@ -52,7 +52,7 @@
         <p>
             <a href="<c:url value='?action=${actRep}&command=${commIdx}' />">一覧に戻る</a>
 
-            <a href="<c:url value='?action=${actFollow}&command=${commCreate}&id=${report.employee.id}' />">フォローする</a>
+<!--             <a href="<c:url value='?action=${actFollow}&command=${commCreate}&id=${report.employee.id}' />">フォローする</a>  -->
         </p>
     </c:param>
 </c:import>
